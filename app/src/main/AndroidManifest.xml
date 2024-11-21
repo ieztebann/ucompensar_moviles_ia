@@ -15,15 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Miapplogin"
         tools:targetApi="31">
-
+        <activity
+            android:name=".DatesActivity"
+            android:exported="false" />
         <!-- CameraActivity -->
         <activity
             android:name=".CameraActivity"
             android:exported="false"
             android:label="@string/title_activity_camera"
-            android:theme="@style/Theme.Miapplogin" />
-
-        <!-- MenuActivity configurada como principal -->
+            android:theme="@style/Theme.Miapplogin" /> <!-- MenuActivity configurada como principal -->
         <activity
             android:name=".MenuActivity"
             android:exported="true"
@@ -31,24 +31,19 @@
             android:theme="@style/Theme.Miapplogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- MapsActivity -->
+        </activity> <!-- MapsActivity -->
         <activity
             android:name=".MapsActivity"
             android:exported="true"
             android:label="@string/title_activity_maps"
-            android:theme="@style/Theme.Miapplogin" />
-
-        <!-- LoginActivity -->
+            android:theme="@style/Theme.Miapplogin" /> <!-- LoginActivity -->
         <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:label="@string/title_activity_login" />
-
-        <!-- FileProvider para CameraActivity -->
+            android:label="@string/title_activity_login" /> <!-- FileProvider para CameraActivity -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.mycameraapp.fileprovider"
@@ -62,7 +57,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDvF17Xe_HKPkexH0xDAaBfq_kBZEeGZSw" />
-
     </application>
 
 </manifest>
