@@ -16,9 +16,14 @@
         android:theme="@style/Theme.Miapplogin"
         tools:targetApi="31">
         <activity
-            android:name=".DatesActivity"
+            android:name=".PDatesActivity2"
             android:exported="false" />
-        <!-- CameraActivity -->
+        <activity
+            android:name=".GDateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatesActivity"
+            android:exported="false" /> <!-- CameraActivity -->
         <activity
             android:name=".CameraActivity"
             android:exported="false"

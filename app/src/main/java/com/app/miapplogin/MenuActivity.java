@@ -32,5 +32,18 @@ public class MenuActivity extends AppCompatActivity {
             Intent intent = new Intent(this, CameraActivity.class);
             startActivity(intent);
         });
+
+        findViewById(R.id.btnPCita).setOnClickListener(v -> {
+            Intent intent = new Intent(this, PDatesActivity2.class);
+            startActivity(intent);
+        });
+        findViewById(R.id.btnGCitas).setOnClickListener(v -> {
+            Intent intent = new Intent(this, GDateActivity.class);
+            startActivity(intent);
+        });
+        findViewById(R.id.btnCita).setOnClickListener(v -> {
+            Intent intent = new Intent(this, DatesActivity.class);
+            startActivity(intent);
+        });
     }
 }

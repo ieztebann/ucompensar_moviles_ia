@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Nombre del paciente -->
+        <TextView
+            android:id="@+id/tvPatientNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del paciente"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/etPatientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el nombre del paciente"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Fecha de la cita -->
+        <TextView
+            android:id="@+id/tvDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de la cita"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seleccione la fecha"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="date"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Hora de la cita -->
+        <TextView
+            android:id="@+id/tvTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de la cita"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seleccione la hora"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="time"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Motivo de la cita -->
+        <TextView
+            android:id="@+id/tvReasonLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motivo de la cita"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/etReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describa el motivo de la cita"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón para registrar la cita -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar cita"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
